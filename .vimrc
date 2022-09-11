@@ -41,7 +41,10 @@ set showmatch " highlight matching brackets
 set incsearch  " highlight matches as soon as you start typing for a search
 set hlsearch " highlight all search matches
 inoremap jj <Esc> 
- 
+nnoremap <C-t> :NERDTreeToggle<CR>
+nmap <Tab> <C-w>w " ctrl+w w is used by default to switch between panes, use tab instead
 
-
-
+" Start NERDTree when Vim starts with a directory argument.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
