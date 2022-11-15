@@ -19,6 +19,10 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'tomasiser/vim-code-dark'
 
+Plugin 'godlygeek/tabular'
+
+Plugin 'preservim/vim-markdown'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,7 +42,8 @@ syntax on  " syntax highlighting
 set number  " lines numbered
 set showcmd " always show commands in the bottom bar
 set cursorline " horizontal line on the line the cursor is in
-set cursorlineopt=number " only highlight the line number 
+" set cursorlineopt=number " only highlight the line number, disabled on
+" parrot vm as it does not recognize the command
 set showmatch " highlight matching brackets
 set incsearch  " highlight matches as soon as you start typing for a search
 set hlsearch " highlight all search matches
@@ -46,6 +51,12 @@ inoremap jj <Esc>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nmap <Tab> <C-w>w " ctrl+w w is used by default to switch between panes, use tab instead
 colorscheme codedark
+nnoremap <C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+nnoremap n nzz
+
+
+
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
