@@ -112,7 +112,8 @@ fi
 }
 
 
-alias ctf="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.83 -o IdentitiesOnly=yes"
+
+
 
 
 
