@@ -54,7 +54,7 @@ colorscheme codedark
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 nnoremap n nzz
-
+nnoremap <Esc><Esc> :let @/ = ""<CR>
 
 
 
