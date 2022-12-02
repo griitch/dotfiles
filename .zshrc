@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cl=clear
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -114,5 +115,6 @@ fi
 
 alias ctf="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.83 -o IdentitiesOnly=yes"
 alias ctf2="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.181 -o IdentitiesOnly=yes"
+
 
 
