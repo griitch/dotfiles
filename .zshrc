@@ -117,4 +117,4 @@ fi
 alias py='python3'
 
 
-
+bindkey '``' autosuggest-accept
