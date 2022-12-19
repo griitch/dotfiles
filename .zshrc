@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages )
+plugins=(git colored-man-pages zsh-autosuggestions )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,8 +114,6 @@ fi
 }
 
 
-alias ctf="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.83 -o IdentitiesOnly=yes"
-alias ctf2="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.181 -o IdentitiesOnly=yes"
 alias py='python3'
 
 
