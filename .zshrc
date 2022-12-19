@@ -119,4 +119,4 @@ alias ctf2="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@
 alias py='python3'
 
 
-
+bindkey '``' autosuggest-accept
