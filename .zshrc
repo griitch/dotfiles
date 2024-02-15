@@ -125,6 +125,7 @@ alias ctf="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@1
 alias ctf2="ssh -i /home/griitch/Desktop/project-ctf/ssh-key-groupe3.pem debian@172.30.150.181 -o IdentitiesOnly=yes"
 alias py='python3'
 
+alias gpt4='docker run -p 8080:8080 -p 1337:1337 -p 7900:7900 --shm-size="2g" hlohaus789/g4f:latest'
 
 bindkey '``' autosuggest-accept
 
