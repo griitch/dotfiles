@@ -23,11 +23,15 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'preservim/vim-markdown'
 
+Plugin 'sainnhe/gruvbox-material'
+
 Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-fugitive'
+
+Plugin 'sheerun/vim-polyglot' "for better langs support 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +60,9 @@ set hlsearch " highlight all search matches
 inoremap jj <Esc> 
 nnoremap <C-t> :NERDTreeToggle<CR>
 nmap <Tab> <C-w>w " ctrl+w w is used by default to switch between panes, use tab instead
-colorscheme codedark
+"colorscheme codedark
+colorscheme gruvbox-material
+set background=dark
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 nnoremap n nzz
